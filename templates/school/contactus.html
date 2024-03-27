@@ -5,8 +5,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>LazyCoder || sumit</title>
+  <title>SMS</title>
 
+  <link rel="stylesheet" href="{% static 'CSS/contactus.css' %}">
 
 </head>
 
@@ -23,7 +24,7 @@
       {% csrf_token %}
       <div class="form-group">
         <p>
-        <h3>{{ form.as_p }}</h3>
+          <h3 class="container">{{ form.as_p }}</h3>
         </p>
         <br>
         <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>
